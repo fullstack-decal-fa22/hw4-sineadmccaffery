@@ -1,5 +1,6 @@
 import React from 'react';
-/* Add any imports you think you might need here! */
+import { useState } from 'react';
+import Color from '/Users/sineadmccaffery/cs198-99/hw4-sineadmccaffery/src/Components/Color';
 
 const Menu = (props) => { 
 
@@ -7,10 +8,10 @@ const Menu = (props) => {
 
     return (
       <div className="colorOptions">
-          <Color color="green" handleClick ={update}/>
-          <Color color="red" handleClick={update}/>
-          <Color color="pink" handleClick={update}/>
-          <Color color="blue" handleClick={update}/>
+        <Color color="green" handleClick ={update}/>
+        <Color color="red" handleClick={update}/>
+        <Color color="pink" handleClick={update}/>
+        <Color color="blue" handleClick={update}/>
       </div>
     );
 }
